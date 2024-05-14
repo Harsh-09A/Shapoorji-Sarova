@@ -122,10 +122,10 @@ html {
 
 @media screen and (max-width: 600px) {
   .carousel-item .banner1 {
-    content: url("../img/banners/mobile_banner1.jpg");
+    content: url("../img/banners/mobile_banner_1.jpg");
   }
   .carousel-item .banner2 {
-    content: url("../img/banners/mobile_banner1.jpg");
+    content: url("../img/banners/mobile_banner_2.jpg");
   }
 }
 
@@ -380,14 +380,18 @@ html {
   position: absolute;
   bottom: 0;
   z-index: 1;
-  background: var(--colorPrimary);
+  background: var(--colorSecondary);
+  width: 100%;
+  text-align: center;
 }
 .amenities_wrapper figcaption h3 {
-  font-weight: 100;
+  font-weight: 400;
   margin-bottom: 5px;
   text-transform: capitalize;
-  font-size: 1.2em;
+  font-size: 1.3em;
   color: var(--colorWhite);
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 0.8px;
 }
 
 /* About */
