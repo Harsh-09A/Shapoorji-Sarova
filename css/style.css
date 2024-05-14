@@ -137,6 +137,9 @@ html {
   .overview-para {
     text-align: justify !important;
   }
+  .hide_on_mobile {
+    display: none;
+  }
 }
 .overview_img {
   height: 500px;
