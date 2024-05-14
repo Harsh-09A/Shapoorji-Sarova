@@ -215,7 +215,11 @@ html {
 #highlights_section {
   background: var(--highlightsBackground);
   color: var(--colorWhite);
+  background-image: url(../img/extras/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
 .highlights li {
   font-size: 1.2em;
   text-decoration: none;
@@ -346,4 +350,201 @@ html {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+}
+
+/* Amenities */
+.amenities_wrapper {
+  height: 200px;
+}
+.amenities_wrapper img {
+  width: 100%;
+  height: 200px;
+}
+
+.amenities_wrapper figure {
+  max-width: 100%;
+  vertical-align: top;
+  position: relative;
+  overflow: hidden;
+}
+.amenities_wrapper figure img {
+  overflow: hidden;
+}
+
+.amenities_wrapper figure img:hover {
+  transform: scale(1.1);
+}
+
+.amenities_wrapper figcaption {
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  background: var(--colorPrimary);
+}
+.amenities_wrapper figcaption h3 {
+  font-weight: 100;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+  font-size: 1.2em;
+  color: var(--colorWhite);
+}
+
+/* About */
+#about_section {
+  background-color: #00354a;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 970px; */
+  background-attachment: fixed;
+  padding: 0 !important;
+}
+.about_overlay {
+  background: var(--colorBackgroundOverlay);
+  /* height: 970px; */
+  padding: 0;
+}
+#about_section .sub-heading {
+  color: var(--colorPrimary);
+  font-size: 1.5em;
+}
+
+#about_section .sub-heading {
+  letter-spacing: 3.5px;
+}
+
+.form-label {
+  display: none;
+}
+.inputStyle {
+  font-size: 1em;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.submit-btn,
+.submit-btn:hover,
+.submit-btn:focus-visible,
+.submit-btn:active {
+  background-color: var(--colorSecondary) !important;
+  border: none !important;
+}
+@media screen and (max-width: 600px) {
+  .enquire-section {
+    padding: 0 !important;
+  }
+  .about-para-container {
+    padding: 2em !important;
+    padding-top: 2em;
+  }
+}
+
+.read_more {
+  background-color: transparent;
+  font-size: 14px;
+  margin: 0;
+  border-radius: 0;
+  width: fit-content;
+  padding-left: 10px;
+  color: var(--colorWhite);
+}
+
+/* Footer */
+#footer {
+  background-color: var(--colorBlack);
+  padding: 40px 20px;
+}
+.qrcode {
+  text-align: center;
+  margin: 10px 20px;
+  color: var(--colorWhite);
+}
+
+.qrcode img {
+  /* display: block;
+    margin: auto; */
+  width: 100px;
+  /* margin-bottom: 10px; */
+}
+
+@media screen and (min-width: 990px) {
+  .navbar-nav {
+    justify-content: flex-end;
+  }
+}
+
+/* Action Footer */
+.action-footer-container {
+  margin: 0;
+  padding: 0;
+}
+.action-footer {
+  margin: 0;
+  padding: 7px;
+  background-color: var(--colorPrimary);
+  color: var(--colorWhite);
+  cursor: pointer;
+  border-top-left-radius: 1vw;
+  border-top-right-radius: 1vw;
+  font-size: 0.8em;
+}
+
+.action-footer li {
+  border-left: 1px solid var(--colorBlack);
+}
+
+.action-footer li:first-child {
+  border-left: none !important;
+}
+/* For Desktop */
+@media only screen and (min-width: 990px) {
+  .action-footer {
+    display: none;
+  }
+}
+
+.form_norms {
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+.download_btn {
+  color: var(--colorSecondary);
+  border-color: var(--colorSecondary);
+}
+.download_btn:hover,
+.download_btn:active {
+  border-color: var(--colorSecondary) !important;
+  background-color: var(--colorSecondary) !important;
+}
+
+/* ----------------------------------------------------------- */
+/* Thank You Page */
+
+#thanku_section {
+  margin-top: 5em !important;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#thanku_section h2 {
+  font-family: MyCustomFont;
+  letter-spacing: 0.1em;
+  font-size: 5em;
+}
+
+#thanku_section p {
+  font-size: 1em;
+}
+
+@media screen and (max-width: 600px) {
+  #thanku_section h2 {
+    font-size: 2.3em;
+  }
+  #thanku_section p {
+    padding: 0 1.2em;
+    font-size: 0.8em;
+  }
 }
